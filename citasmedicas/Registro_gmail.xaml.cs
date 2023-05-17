@@ -18,7 +18,6 @@ namespace citasmedicas
         }
 
         
-
         private async void btnRegistrarg_Clicked(object sender, EventArgs e)
         {
             //llamo a la ventana para ingresar el gmail

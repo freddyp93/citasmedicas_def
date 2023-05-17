@@ -19,7 +19,7 @@ namespace citasmedicas
 
         private void Registrar_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Login());
+            Navigation.PushAsync(new Login()); //nuevos cambios
         }
     }
 }
