@@ -10,19 +10,17 @@ using Xamarin.Forms.Xaml;
 namespace citasmedicas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Registro_gmail : ContentPage
+    public partial class cancelarCita : ContentPage
     {
-        public Registro_gmail()
+        public cancelarCita()
         {
             InitializeComponent();
         }
 
-        
-
-        private async void btnRegistrarg_Clicked(object sender, EventArgs e)
+        private void Cancelar_Clicked(object sender, EventArgs e)
         {
-            //llamo a la ventana para ingresar el gmail
-            await Navigation.PushAsync(new Login());
+            DisplayAlert("Cita cancelada", "Su cita ha sido cancelada", "Cerrar");
+            Navigation.PushAsync(new Ingreso());
         }
     }
 }

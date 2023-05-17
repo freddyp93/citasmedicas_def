@@ -17,39 +17,44 @@ namespace citasmedicas
             InitializeComponent();
         }
 
-        private async void btnIngresar_Clicked(object sender, EventArgs e)
+        private void btnIngresar_Clicked(object sender, EventArgs e)
         {
 
             string usuario = txtUsuario.Text;
             string contrasena = txtContrasena.Text;
             if (usuario == "estudiante2023" && contrasena == "uisrael2023")
             {
-                await Navigation.PushAsync(new Ingreso());
+                Navigation.PushAsync(new Ingreso());
             }
             else
             {
                 //bota la alerta y se limpia el cuadro 
+               txtUsuario.Text = "";
+               txtContrasena.Text = "";
                 DisplayAlert("ALERTA", "Usuario/Contraseña Incorrectos", "Cerrar");
-                txtUsuario.Text = "";
-                txtContrasena.Text = "";
             }
 
         }
 
-        private async void btnRegistro_Clicked(object sender, EventArgs e)
+        private void btnRegistro_Clicked(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new Reseteol());
+            Navigation.PushAsync(new registroUsuario());
         }
 
-        private async void btnOcontrasena_Clicked(object sender, EventArgs e)
+        private void btnOcontrasena_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Reseteol());
+            Navigation.PushAsync(new Reseteol());
         }
 
-        private async void btnRegistroGmail_Clicked(object sender, EventArgs e)
+        private void btnRegistroGmail_Clicked(object sender, EventArgs e)
         {
             //llamo a la ventana para registro con gmail
-            await Navigation.PushAsync(new Registro_gmail());
+            Navigation.PushAsync(new Registro_gmail());
+        }
+
+        private void btnIngresoGmail_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Ingreso());
         }
     }
 }

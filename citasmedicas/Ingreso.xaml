@@ -6,20 +6,11 @@
         <ScrollView>
             <StackLayout BackgroundColor="WhiteSmoke">
                 <Label Text="Ingreso de Pacientes " x:Name="lblTexto1" FontSize="20" TextColor="Blue" HorizontalTextAlignment="Center"/>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
-                        <ColumnDefinition/>
-                    </Grid.ColumnDefinitions>
-                    <Button x:Name="btnregistrarcita" Text="Registrar cita" Clicked="btnregistrarcita_Clicked" Grid.Row="1" Grid.Column="0"/>
-                    <Button x:Name="btnsolicitarcita" Text="Solicitar Cita" Clicked="btnsolicitarcita_Clicked" Grid.Row="2" Grid.Column="0"/>
-                    <Button x:Name="btncancelarcita" Text="Cancelar cita" Clicked="btncancelarcita_Clicked" Grid.Row="3" Grid.Column="0"/>
-                </Grid>
+                
+                    <Button x:Name="btnregistrarpaciente" Text="Registrar paciente" Clicked="btnregistrarpaciente_Clicked" />
+                    <Button x:Name="btnsolicitarcita" Text="Solicitar Cita" Clicked="btnsolicitarcita_Clicked" />
+                    <Button x:Name="btncancelarcita" Text="Cancelar cita" Clicked="btncancelarcita_Clicked" />
+              
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

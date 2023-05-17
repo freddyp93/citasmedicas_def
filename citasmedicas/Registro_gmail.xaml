@@ -34,9 +34,7 @@
                 <Entry x:Name="txtedad" Keyboard="Numeric" Grid.Row="4" Grid.Column="1"/>
 
                 <!--botones de registrar y regresar-->
-                <Button x:Name="btnRegistrog" Text="GUARDAR" Clicked="btnRegistrog_Clicked" Grid.Row="6" Grid.Column="0"/>
-                <Button x:Name="btnRegresarg" Text="REGRESAR" Clicked="btnRegresarg_Clicked" Grid.Row="6" Grid.Column="1"/>
-
+             
             </Grid>
             <!--AGREGO BOTON PARA REGISTRAR CON GMAIL-->
             <Button x:Name="btnRegistrarg" Text="REGISTRAR CON GMAIL" Clicked="btnRegistrarg_Clicked"/>

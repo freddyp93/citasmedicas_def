@@ -10,19 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace citasmedicas
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Registro_gmail : ContentPage
+    public partial class registroPaciente : ContentPage
     {
-        public Registro_gmail()
+        public registroPaciente()
         {
             InitializeComponent();
         }
 
-        
-
-        private async void btnRegistrarg_Clicked(object sender, EventArgs e)
+        private void registrarfoto_Clicked(object sender, EventArgs e)
         {
-            //llamo a la ventana para ingresar el gmail
-            await Navigation.PushAsync(new Login());
+
+        }
+
+        private void Guardar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Ingreso());
         }
     }
 }

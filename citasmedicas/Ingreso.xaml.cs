@@ -17,20 +17,22 @@ namespace citasmedicas
         {
             InitializeComponent();
         }
-
-        private void btnregistrarcita_Clicked(object sender, EventArgs e)
+        private void btnregistrarpaciente_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new registroPaciente());
         }
+
 
         private void btnsolicitarcita_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new solicitarCita());
         }
 
         private void btncancelarcita_Clicked(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new cancelarCita());
         }
+
+        
     }
 }
