@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
+
+
 
 namespace citasmedicas
 {
@@ -15,12 +19,23 @@ namespace citasmedicas
         public cancelarCita()
         {
             InitializeComponent();
+            
         }
 
         private void Cancelar_Clicked(object sender, EventArgs e)
         {
-            DisplayAlert("Cita cancelada", "Su cita ha sido cancelada", "Cerrar");
-            Navigation.PushAsync(new Ingreso());
+           var monkeyList = new List<string>();
+                monkeyList.Add("Baboon");
+                monkeyList.Add("Capuchin Monkey");
+                monkeyList.Add("Blue Monkey");
+                monkeyList.Add("Squirrel Monkey");
+                monkeyList.Add("Golden Lion Tamarin");
+                monkeyList.Add("Howler Monkey");
+            monkeyList.Add("Japanese Macaque");
+           
+            var picker = new Picker { Title = "Select a monkey", TitleColor = Color.Red };
+            picker.ItemsSource = monkeyList;
+           
         }
     }
 }

@@ -6,6 +6,18 @@
         <StackLayout>
             <Label Text="CANCELAR CITA" HorizontalTextAlignment="Center" FontSize="18" />
             <Label Text="Observacion" HorizontalTextAlignment="Center" FontSize="18" />
+            <Picker x:Name="picker"
+        Title="Motivo de cancelación de cita"
+        TitleColor="Red">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>No existe permiso laboral</x:String>
+                        <x:String>No se encuentra en la ciudad</x:String>
+                        <x:String>No dispone de tiempo</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
             <Entry x:Name="txtObservacion" HorizontalTextAlignment="Center" Text="Describa el motivo de la cancelacion"/>
             <Button x:Name="Cancelar" Text="Cancelar" Clicked="Cancelar_Clicked"/>
 
