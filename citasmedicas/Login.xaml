@@ -6,7 +6,7 @@
         <ScrollView>
             <StackLayout BackgroundColor="FloralWhite">
                 <Label Text="BIENVENIDOS CENTRO MÉDICO CENTE" FontSize="30" TextColor="Black" HorizontalTextAlignment="Center"/>
-                <Image Source="imagen2.png" WidthRequest="100" HeightRequest="100"/>
+                <Image Source="https://drive.google.com/file/d/1KTLzSfOM9fvX_VqOUER9FrN-jOZqGSOd/view?usp=share_link" WidthRequest="100" HeightRequest="100"/>
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
